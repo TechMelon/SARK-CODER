@@ -42,7 +42,7 @@ a {
   font-size: 30px;
   font-weight: 900;
   color:#fff;
-  
+  fon
 }
 .nav .nav-links {
   column-gap: 20px;
@@ -170,99 +170,94 @@ a {
 }
 /*Navigation bar end */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-h1{
-    font-size: 50px;
-    line-height: 64px;
-    color: #222;
-}
-h2{
-    font-size: 46px;
-    line-height: 54px;
-    color: #222;
-}
-h4{
-    font-size: 20px;
-    color: #222;
-}
-h6{
-    font-weight: 700;
-    font-size: 12px;
-}
-p {
-    font-size: 16px;
-    color: #51665d;
-    margin: 15px 0 20px 0;
-}
-.section-p1{
-    padding: 40px 80px;
-}
-.section-m1{
-    margin: 40px 0;
-}
-body{
-    width: 100%;
-}
-/*position:sticky;
-top:0;
-left:0;*/
-/*home page*/
+/* Signup or Login start*/
 .container{
-    background-image: url('./images/backgroundimg.jpg');
-    height: 80vh;
     width: 100%;
-    margin-top:80px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.037),rgba(0, 0, 0, 0.237)),url('background.jpg');
+    background-position: center;
     background-size: cover;
-    background-position: top 25% right 0;
-    padding: 0 80px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
+    align-items: center;
 }
-.container h4 {
-    padding-bottom: 15px;
+
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    min-width: 350px;
+    background: white;
+    padding: 55px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: -2px 2px 15px rgba(0, 0, 0, 0.5);
+
+
 }
-.container h1 {
-    color: rgb(172, 85, 100);
+.form-box h1{
+    font-size: 30px;
+    color:#4a98f7;
 }
-.container button {
-    background-color: rgb(214, 110, 127);
+.form-box .underline{
+   width: 30px; 
+   height: 4px;
+   background-color:#4a98f7;
+   margin: 10px auto 50px auto;
+   transition: transform .5s;
 }
-.container button:hover{
-    background-color: rgb(224, 179, 187);
-}
-#feature{
+.input-field{
+    background: #eaeaea;
+    margin:15px 0;
+    border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
+    max-height: 60px;
+    transition: max-height 0.5s;
+    overflow: hidden;
 }
-#feature .fe-box{
-    width: 180px;
-    text-align: center;
-    padding: 25px 15px;
-    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.322);
-    border: 1px solid #cce;
-    border-radius: 4px;
-    margin: 15px 0;
-}
-#feature .fe-box:hover{
-    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.384);
-}
-#feature .fe-box img{
+.input-field input{
     width: 100%;
-    margin-bottom: 10px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
 }
-#feature .fe-box h6{
-    padding: 9px 6px 6px 8px;
-    line-height: 1;
-    border-radius: 4px;
-    color: black;
-    background-color: rgb(197, 153, 160);
+.input-field i{
+ margin-left: 15px;
+ color: #999;
 }
+form p{
+    text-align: left;
+    font-size: 13px;
+
+}
+form p a{
+    text-decoration: none;
+    color: #4a98f7;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-field button{
+    flex-basis: 48%;
+    background: #4a98f7;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+.input-group{
+    height: 280px;
+}
+button.disable{
+    background: #eaeaea;
+    color: #555;
+
+}
+/* Signup or Login end*/
