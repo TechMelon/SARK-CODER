@@ -36,7 +36,7 @@ function generateProduct(id) {
     name: `Product ${id}`,
     category: randomCategory,
     price: Math.floor(Math.random() * 491) + 10, // Random price between 10 and 500
-    image: '../images/laptop.jpg',
+    image: 'https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_640.jpg',
     description: randomDescription,
   };
 }
