@@ -212,45 +212,7 @@ body{
 top:0;
 left:0;*/
 /* home page */
-#newsletter{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: rgba(0, 0, 128, 0.13);
-}
-#newsletter h4{
-    font-size: 22px;
-}
-#newsletter span{
-    color: rgb(190, 190, 85);
-}
-#newsletter input{
-    height: 3.125rem;
-    padding: 0 1.25em;
-    font-size: 14px;
-    width: 100%;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    outline: none;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-#newsletter .form{
-    display: flex;
-    width: 40%;
-}
-#newsletter button{
-    height: 3.125rem;
-    padding: 0 1.25em;
-    font-size: 14px;
-    width: 100px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    outline: none;
-    background-color:#60606393;
-    white-space: nowrap;
-}
+
 .container{
     background-image: url('./images/backgroundimg.jpg');
     height: 80vh;
@@ -337,7 +299,6 @@ left:0;*/
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
     transition: 0.2s ease;
-    position: relative;
   }
 #product1 .pro:hover{
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.158);

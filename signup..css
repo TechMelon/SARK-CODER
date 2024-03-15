@@ -42,7 +42,6 @@ a {
   font-size: 30px;
   font-weight: 900;
   color:#fff;
-  fon
 }
 .nav .nav-links {
   column-gap: 20px;
@@ -172,7 +171,7 @@ a {
 
 /* Signup or Login start*/
 .container{
-    
+    margin-top: 20px;
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.037),rgba(0, 0, 0, 0.237)),url('background.jpg');
