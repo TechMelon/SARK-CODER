@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Css/product.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="logo" href="/index.html">Logo</a>
+      <a class="cart-logo" href="#">Cart <span id="cart-count">0</span></a>
+    </div>
+
+    <div class="filter-buttons">
+      <button onclick="filterProducts('All')">All</button>
+      <button onclick="filterProducts('Electronics')">Electronics</button>
+      <button onclick="filterProducts('Clothing')">Clothing</button>
+      <button onclick="filterProducts('Books')">Books</button>
+      <button onclick="filterProducts('Home')">Home</button>
+      <button onclick="filterProducts('Beauty')">Beauty</button>
+      <button onclick="filterProducts('Sports')">Sports</button>
+      <button onclick="filterProducts('Toys')">Toys</button>
+      <button onclick="filterProducts('Food')">Food</button>
+      <button onclick="filterProducts('Garden')">Garden</button>
+      <button onclick="filterProducts('Music')">Music</button>
+    </div>
+
+    <div class="mainBody">
+      <div id="products"></div>
+      <div id="selected-items">
+        <h2>Selected Items</h2>
+        <div id="selected-items-list"></div>
+        <p id="total-price"></p>
+      </div>
+    </div>
+
+    <script src="./js/cart.js"></script>
+    <script src="./js/product.js"></script>
+  </body>
+</html>
