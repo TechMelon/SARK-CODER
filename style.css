@@ -39,7 +39,46 @@ body{
 /*position:sticky;
 top:0;
 left:0;*/
-/*home page*/
+/* home page */
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(0, 0, 128, 0.13);
+}
+#newsletter h4{
+    font-size: 22px;
+}
+#newsletter span{
+    color: rgb(190, 190, 85);
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+#newsletter button{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    background-color:#60606393;
+    white-space: nowrap;
+}
 .container{
     background-image: url('./images/backgroundimg.jpg');
     height: 80vh;
@@ -56,18 +95,31 @@ left:0;*/
     padding-bottom: 15px;
 }
 .container h1 {
-    color: rgb(172, 85, 100);
+    color: rgba(0, 0, 0, 0.37);
 }
 .container button {
+    border-radius: 20px;
+    padding: 10px;
     background-color: rgb(214, 110, 127);
-}
+  }
 .container button:hover{
-    background-color: rgb(224, 179, 187);
+    background-color: rgba(0, 0, 0, 0.301);
+}
+.about{
+    margin: 100px;
+}
+.about h1{
+    text-align: center;
+}
+.about h4{
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 #feature{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 #feature .fe-box{
@@ -92,4 +144,64 @@ left:0;*/
     border-radius: 4px;
     color: black;
     background-color: rgb(197, 153, 160);
+}
+#product1{
+    text-align: center;
+}
+#product1 .new-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#product1 .pro {
+    width: 23%;
+    margin: 5px 0px;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: 0.2s ease;
+    position: relative;
+  }
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.158);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .descrip{
+    text-align: start;
+    padding: 10px 0px;
+}
+#product1 .pro .descrip span{
+    color: #606063;
+    font-size: 12px;
+}
+#product1 .pro .descrip span h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .descrip span h4{
+    padding-top: 7px;
+    color: rgba(0, 0, 0, 0.459);
+    font-size: 15px;
+    font-weight: 700;
+}
+#product1 .pro .cart{
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   border-radius: 50px;
+   background-color: #e8f6ea;
+   font-weight: 500;
+   color: aliceblue;
+   border: 1px solid #cce7d0;
+   position: absolute;
+   bottom: 20px;
+   right: 10px;
 }
