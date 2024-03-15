@@ -172,6 +172,7 @@ a {
 
 /* Signup or Login start*/
 .container{
+    
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.037),rgba(0, 0, 0, 0.237)),url('background.jpg');
