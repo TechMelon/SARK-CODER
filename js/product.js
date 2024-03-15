@@ -1,3 +1,5 @@
+//creating random data 
+
 function generateProduct(id) {
   const categories = [
     'Electronics',
@@ -39,7 +41,7 @@ function generateProduct(id) {
   };
 }
 
-// Generate 50 products
+// Generate 51 products
 const productsData = [];
 for (let i = 1; i <= 51; i++) {
   productsData.push(generateProduct(i));
