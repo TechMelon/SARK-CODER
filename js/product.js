@@ -1,3 +1,27 @@
+//nav bar
+const nav = document.querySelector(".nav"),
+  searchIcon = document.querySelector("#searchIcon"),
+  navOpenBtn = document.querySelector(".navOpenBtn"),
+  navCloseBtn = document.querySelector(".navCloseBtn");
+
+searchIcon.addEventListener("click", () => {
+  nav.classList.toggle("openSearch");
+  nav.classList.remove("openNav");
+  if (nav.classList.contains("openSearch")) {
+    return searchIcon.classList.replace("uil-search", "uil-times");
+  }
+  searchIcon.classList.replace("uil-times", "uil-search");
+});
+
+navOpenBtn.addEventListener("click", () => {
+  nav.classList.add("openNav");
+  nav.classList.remove("openSearch");
+  searchIcon.classList.replace("uil-times", "uil-search");
+});
+navCloseBtn.addEventListener("click", () => {
+  nav.classList.remove("openNav");
+});
+
 //creating random data 
 
 function generateProduct(id) {
@@ -36,7 +60,7 @@ function generateProduct(id) {
     name: `Product ${id}`,
     category: randomCategory,
     price: Math.floor(Math.random() * 491) + 10, // Random price between 10 and 500
-    image: 'https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_640.jpg',
+    image: './images/laptop.jpg',
     description: randomDescription,
   };
 }
